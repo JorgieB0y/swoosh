@@ -61,6 +61,14 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="GET STARTED"/>
+                                <connections>
+                                    <segue destination="SN4-wv-MPD" kind="show" id="Yb9-Cf-Vth"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOR-Wn-4dq">
+                                <rect key="frame" x="40" y="689" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxn-t6-lm8">
                                 <rect key="frame" x="67" y="240" width="280" height="40"/>
@@ -161,6 +169,13 @@
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="NEXT"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lF5-9r-nQa">
+                                <rect key="frame" x="20" y="40" width="29" height="24"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="M5g-TD-3TD" kind="unwind" unwindAction="unwindSegueFromSkillVCWithUnwindSegue:" id="AbS-de-Ar5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -170,6 +185,8 @@
                             <constraint firstItem="Tf6-hZ-5R8" firstAttribute="leading" secondItem="oOn-XL-EQ1" secondAttribute="leadingMargin" id="Mms-T6-lAV"/>
                             <constraint firstItem="Drq-LR-H1X" firstAttribute="leading" secondItem="oOn-XL-EQ1" secondAttribute="leadingMargin" id="Syj-xQ-yUu"/>
                             <constraint firstAttribute="trailing" secondItem="X3O-RC-xJI" secondAttribute="trailing" constant="26" id="b5b-L6-jSN"/>
+                            <constraint firstItem="lF5-9r-nQa" firstAttribute="leading" secondItem="oOn-XL-EQ1" secondAttribute="leadingMargin" id="cJG-JW-On0"/>
+                            <constraint firstItem="lF5-9r-nQa" firstAttribute="top" secondItem="RDT-t7-xu2" secondAttribute="bottom" constant="20" id="eub-M5-yLx"/>
                             <constraint firstItem="CHH-Mv-jUu" firstAttribute="top" secondItem="oOn-XL-EQ1" secondAttribute="top" id="g6C-43-bR0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Tf6-hZ-5R8" secondAttribute="trailing" id="gb4-Be-8Ym"/>
                             <constraint firstItem="Drq-LR-H1X" firstAttribute="top" secondItem="Tf6-hZ-5R8" secondAttribute="bottom" constant="50" id="gi9-EL-Dco"/>
@@ -181,6 +198,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAn-4W-ugP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="M5g-TD-3TD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="133.5832083958021"/>
         </scene>
@@ -268,6 +286,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
