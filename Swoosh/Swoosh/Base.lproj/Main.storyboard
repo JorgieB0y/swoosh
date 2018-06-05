@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eRg-Hj-fYB"/>
                         <viewControllerLayoutGuide type="bottom" id="UL2-cS-bVH"/>
@@ -65,11 +65,6 @@
                                     <segue destination="SN4-wv-MPD" kind="show" id="Yb9-Cf-Vth"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOR-Wn-4dq">
-                                <rect key="frame" x="40" y="689" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxn-t6-lm8">
                                 <rect key="frame" x="67" y="240" width="280" height="40"/>
                                 <constraints>
@@ -107,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="fbF-HR-D7J">
             <objects>
-                <viewController id="SN4-wv-MPD" sceneMemberID="viewController">
+                <viewController id="SN4-wv-MPD" customClass="LeagueVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RDT-t7-xu2"/>
                         <viewControllerLayoutGuide type="bottom" id="Trk-Gq-ebI"/>
@@ -202,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="8TG-Kg-7rY">
             <objects>
-                <viewController id="G5Q-n3-F4d" sceneMemberID="viewController">
+                <viewController id="G5Q-n3-F4d" customClass="SkillVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="51z-IY-G5m"/>
                         <viewControllerLayoutGuide type="bottom" id="Det-rn-G47"/>
